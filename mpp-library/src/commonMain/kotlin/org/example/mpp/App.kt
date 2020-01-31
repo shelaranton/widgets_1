@@ -8,13 +8,14 @@ import dev.icerock.moko.widgets.core.Theme
 import dev.icerock.moko.widgets.screen.Args
 import dev.icerock.moko.widgets.screen.BaseApplication
 import dev.icerock.moko.widgets.screen.ScreenDesc
+import org.example.mpp.LoginScreen.LoginScreen
 
 class App : BaseApplication() {
     override fun setup(): ScreenDesc<Args.Empty> {
         val theme = Theme()
 
-        return registerScreen(MainScreen::class) {
-            MainScreen(theme)
+        return registerScreen(LoginScreen::class) {
+            LoginScreen(theme)
         }
     }
 }
